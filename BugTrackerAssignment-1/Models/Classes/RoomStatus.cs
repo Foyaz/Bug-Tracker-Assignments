@@ -8,6 +8,9 @@ namespace BugTrackerAssignment_1.Models.Classes
     public class RoomStatus
     {
         public int Id { get; set; }
+        public string Status { get; set; }
+
+
         public RoomStatus()
         {
             Rooms = new HashSet<Room>();
