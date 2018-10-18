@@ -10,7 +10,8 @@ namespace BugTrackerAssignment_1.Models.Classes
         public int Id { get; set; }
         public RoomStatus()
         {
-
+            Rooms = new HashSet<Room>();
         }
+        public virtual ICollection<Room> Rooms { get; set; }
     }
 }

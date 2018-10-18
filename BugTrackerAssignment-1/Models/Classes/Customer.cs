@@ -12,5 +12,12 @@ namespace BugTrackerAssignment_1.Models.Classes
         public String LastName { get; set; }
         public int PhoneNumber { get; set; }
         public string  Notes { get; set; }
+
+        public Customer()
+        {
+            Rooms = new HashSet<Room>();
+        }
+        public virtual ICollection<Room> Rooms { get; set; }
+
     }
 }
